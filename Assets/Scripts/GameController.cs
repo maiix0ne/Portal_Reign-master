@@ -24,7 +24,6 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-
         sceneLoader = FindObjectOfType<SceneLoader>();
         enemiesLeft = GameObject.FindObjectsOfType<Enemy>().Length;
         restartText.text = "";

@@ -104,11 +104,10 @@ public class PlayerController : MonoBehaviour
             gameController.GameOver();
         }
     }
-        void OnPlayerTakeOff()
-        {
-            isControlEnabled = true;
-            landed = false;
+    void OnPlayerTakeOff()
+    {
+        isControlEnabled = true;
+        landed = false;
 
-        }
     }
-
+}
