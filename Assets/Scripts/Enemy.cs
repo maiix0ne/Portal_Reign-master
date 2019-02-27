@@ -25,8 +25,12 @@ public class Enemy : MonoBehaviour
         Collider boxCollider = gameObject.AddComponent<BoxCollider>();
         boxCollider.isTrigger = false;
     }
+
     void OnParticleCollision(GameObject other)
     {
+
+        Debug.Log(gameObject.name + " hit by " + other.name);
+
         ProcessHit();
         if (hits <= 1 && gameObject.activeSelf)
         {

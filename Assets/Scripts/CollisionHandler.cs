@@ -36,4 +36,8 @@ public class CollisionHandler : MonoBehaviour
             SendMessage("OnPlayerTakeOff");
         }
     }
+
+    private void OnParticleCollision(GameObject other) {
+        Debug.Log(gameObject.name + "hit by " + other.name);
+    }
 }

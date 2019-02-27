@@ -19,7 +19,6 @@ public class Projectiles : MonoBehaviour
     }
     void Shoot()
     {
-
         if (onRange)
         {
 
